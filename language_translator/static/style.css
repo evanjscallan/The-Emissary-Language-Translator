@@ -1,0 +1,149 @@
+@media only screen and (max-width: 5000px) {
+  body, html {
+    font-family: 'RetroGaming', sans-serif;
+    height: 100%;
+    width: 100%;
+  
+    overflow-x: hidden;
+    background-color: black;
+    margin: 0; }
+
+  .animation {
+    clear: both;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    z-index: 0;
+    animation: infinite 5s linear infinite; }
+
+  @keyframes infinite {
+    0% {
+      transform: translateX(0%); }
+    100% {
+      transform: translateX(-100%); } }
+
+  .animation2{
+    float: left;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    z-index: 0;
+    animation: infinite 5s linear infinity; }
+  }
+
+   @keyframes infinity {
+    0% {
+      transform: translateX(100%); }
+    100% {
+      transform: translateX(0%); } }
+
+
+  .outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  .top-container {
+    width: 50vw;
+    height: 20vh;
+    color: white;
+    font-weight: 100;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+    background-image: url("../static/img/optimized-grey.svg");
+    background-repeat: repeat;
+    background-size: contain;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:  2;
+    margin: 1rem; }
+
+  .top-container h1 {
+    font-size: 1.3rem; }
+
+  .top-container h2 {
+    font-size: 1.2rem; }
+
+  .translator-container {
+    display:  none;
+    color: white;
+    width: 80vw;
+    position: relative;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+    background-image: url("../static/img/optimized-grey.svg");
+    background-repeat: repeat;
+    background-size: 35%;
+    padding-bottom: 2rem;
+    border-radius: 10px; }
+
+  .tran-l h2, .tran-r h2 {
+    font-size: 1rem;
+    margin: 5px; }
+
+  .tran-l, .tran-r {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .tran-l {
+    border-bottom: 3px solid lightgrey;
+    height: 50%;
+    width: 100%;
+    padding-bottom: 1rem; }
+
+  ::placeholder {
+    font-family: 'RetroGaming';
+    color: white;
+    opacity: 1; }
+
+  .tran-r {
+    width: 100%;
+    height: 80%; }
+
+  textarea {
+    font-family: 'RetroGaming';
+    resize: none; }
+
+  .tran-l textarea, .tran-r textarea {
+    width: 60vw;
+    font-size: 1rem;
+    height: 11vh;
+    background: none;
+    color: white;
+    text-align: center;
+    border: 2px dotted white;
+    border-radius: 10px;
+    margin: 1rem;
+    opacity: 1; }
+
+  #sub {
+    height: 2rem;
+    width: 30vw;
+    font-size: 1rem;
+    opacity: 0.8; }
+
+  #sub {
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    height: 2rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    opacity: 0.9;
+    border-radius: 10px; } }
+
+/*# sourceMappingURL=style.css.map */

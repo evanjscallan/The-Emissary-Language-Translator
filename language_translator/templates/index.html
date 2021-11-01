@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!---Link to Stylesheet--->
+	<link rel='stylesheet' href='../static/style.css'>
+	<!---Link To Granim (Gradient Changer) Script) --->
+	<script src='../static/granim.min.js'></script>
+	<title>Language Translator</title>
+</head>
+<body>
+	<img src='../static/img/optimized-16bit.svg' class='animation'></img>
+	<img src='../static/img/optimized-16bit.svg' class='animation2'></img>
+	<div class='outer-container'>
+	<!--------->
+		<div class='top-container'>
+			<h1> The Emissary</h1>
+			<h2> Language Translator </h2>
+		</div>
+		<div class='translator-container'>
+		<!----TRANSLATOR CONTAINER--->
+			<div class='tran-l'>
+				<h2>Message</h2>
+				<form method="POST">
+				<textarea name='text' placeholder="Enter your message..."></textarea>
+				<br>
+				<input id='sub' type='submit' value='Translate'>
+				</form>
+			</div>	
+		<hr>	
+			<div class='tran-r'>
+					<h2>Translation</h2>
+					<textarea id='output-text'>{{ message }}</textarea>
+					<p><strong> Language: {{ language }} <strong></p>
+			</div>
+		<!----TRANSLATOR CONTAINER--->
+		</div>
+	<!--------->	
+
+	</div>
+</body>
+</html>
