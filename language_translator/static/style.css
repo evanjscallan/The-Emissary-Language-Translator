@@ -70,6 +70,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     z-index:  2;
     margin: 1rem;
     overflow:hidden; }
